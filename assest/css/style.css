@@ -1,0 +1,258 @@
+/* Reset CSS */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Helvetica, Arial, sans-serif;
+}
+/* 
+1. Vị trí
+2. Kích thước
+3. Màu sẵc
+4. Kiểu dáng (kiểu chữ, ...)
+*/
+#main {
+}
+
+.clear {
+  clear: both;
+}
+.text-white {
+  color: white !important;
+}
+#header {
+  height: 46px;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+#nav,
+.subnav {
+  list-style-type: none;
+}
+
+#nav {
+  display: inline-block;
+}
+
+#nav > li {
+  position: relative;
+  display: inline-block;
+}
+#nav > li > a {
+  color: white;
+  text-transform: uppercase;
+}
+#nav li a {
+  text-decoration: none;
+  line-height: 46px;
+  padding: 0px 20px;
+  display: block;
+}
+
+#nav li:hover .subnav {
+  display: block;
+}
+
+#nav .subnav li:hover a,
+#nav > li:hover > a {
+  color: black;
+  background-color: rgb(165, 164, 164);
+}
+
+#nav .nav-arrow-down {
+  font-size: 14px;
+}
+
+#nav .subnav {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  display: none;
+}
+
+#nav .subnav a {
+  color: black;
+  padding: 0px 12px;
+  line-height: 38px;
+  min-width: 160px;
+}
+#header .search-icon {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 46px;
+}
+#header .search-btn {
+  float: right;
+  padding: 0px 21px;
+}
+
+#header .search-btn:hover {
+  background-color: red;
+  cursor: pointer;
+}
+#slider {
+  position: relative;
+  min-height: 500px;
+  margin-top: 46px;
+  padding-top: 50%;
+  background: url("/assest/imgs/slider1.jpg") top center / cover no-repeat;
+}
+
+.text-content {
+  position: absolute;
+  color: white;
+  text-align: center;
+  bottom: 48px;
+  width: 100%;
+  /* left: 50%;
+  transform: translateX(-50%); */
+}
+#slider .text-heading {
+  font-weight: 500;
+  font-size: 24px;
+}
+#slider .text-description {
+  margin-top: 25px;
+}
+
+#content {
+}
+
+#content .content-section {
+  width: 800px;
+  padding: 64px 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#content .section-heading {
+  font-size: 30px;
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: 4px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#content .section-sub-heading {
+  font-size: 16px;
+  text-align: center;
+  margin-top: 20px;
+  font-style: italic;
+}
+
+#content .about-text {
+  margin-top: 20px;
+  text-align: justify;
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+#content .member-list {
+  margin-top: 48px;
+}
+
+#content .member-item {
+  float: left;
+  width: 33.333333%;
+  text-align: center;
+}
+
+#content .member-name {
+  font-size: 15px;
+}
+
+#content .member-img {
+  margin-top: 15px;
+  width: 154px;
+  border-radius: 4px;
+}
+
+.tour-section {
+  background-color: black;
+}
+
+.tickets-list {
+  background-color: #fff;
+  margin-top: 40px;
+  list-style: none;
+}
+.tickets-list li {
+  font-size: 15px;
+  padding: 11px 16px;
+  border-bottom: 1px solid #ddd;
+}
+.tickets-list .sold-out {
+  background-color: #f44336;
+  color: #fff;
+  padding: 3px 4px;
+  margin-left: 16px;
+}
+.tickets-list .quantity {
+  float: right;
+  width: 24px;
+  height: 24px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 24px;
+  margin-top: -3px;
+}
+.places-list {
+  margin: 32px -8px 0px -8px;
+  padding-bottom: 48px;
+}
+.place-item {
+  float: left;
+  width: 33.333%;
+  padding: 0px 8px;
+}
+.place-img {
+  width: 100%;
+  display: block;
+}
+
+.place-img:hover {
+  opacity: 0.6;
+}
+.place-body {
+  background-color: #fff;
+  padding: 16px;
+  font-size: 15px;
+}
+.place-heading {
+  font-size: 15px;
+  font-weight: 600;
+}
+.place-time {
+  margin: 15px 0px;
+  color: #757575;
+}
+.place-desc {
+  line-height: 1.4;
+}
+.place-buy-btn {
+  color: #fff;
+  background-color: #000;
+  display: inline-block;
+  padding: 11px 16px;
+  text-decoration: none;
+  margin-top: 15px;
+}
+.place-buy-btn:hover {
+  color: #000 !important;
+  background-color: #ccc !important;
+}
+#footer {
+}
